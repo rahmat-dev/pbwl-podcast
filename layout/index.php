@@ -14,7 +14,11 @@
     <nav class="navbar">
       <h1 class="navbar-brand">PBWLCast</h1>
       <div class="navbar-menu">
-        <a href="index.php?page=login" class="menu-item">Login</a>
+        <?php if (isset($_SESSION['user_id'])) : ?>
+          <a href="dashboard.php" class="menu-item">Dashboard</a>
+        <?php else : ?>
+          <a href="index.php?page=login" class="menu-item">Login</a>
+        <?php endif; ?>
       </div>
     </nav>
 

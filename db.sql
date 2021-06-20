@@ -32,3 +32,12 @@ CREATE TABLE tb_played (
 	FOREIGN KEY (album_id) REFERENCES tb_album(album_id) ON UPDATE CASCADE ON DELETE RESTRICT,
 	FOREIGN KEY (track_id) REFERENCES tb_track(track_id) ON UPDATE CASCADE ON DELETE RESTRICT
 );
+
+CREATE TABLE tb_users (
+  user_id INT NOT NULL AUTO_INCREMENT,
+  user_nama_lengkap VARCHAR(50) NOT NULL,
+  user_name VARCHAR(20) NOT NULL,
+  user_password VARCHAR(255) NOT NULL,
+  user_role ENUM('Admin', 'User') DEFAULT 'User',
+  PRIMARY KEY (user_id)
+);
