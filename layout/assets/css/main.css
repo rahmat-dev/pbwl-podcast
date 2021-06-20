@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f7f8f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 920px;
+  margin: auto;
+}
+
+.navbar {
+  background: #ff9800;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-brand {
+  color: #fafafa;
+}
+.navbar-menu > .menu-item {
+  color: #fafafa;
+  margin-right: 16px;
+}
+.navbar-menu > .menu-item:last-child {
+  margin-right: 0;
+}
