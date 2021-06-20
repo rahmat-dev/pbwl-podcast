@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <nav class="navbar">
-      <h1 class="navbar-brand">PBWLCast</h1>
+      <h1 class="text-white">PBWLCast</h1>
       <div class="navbar-menu">
         <?php if (isset($_SESSION['user_id'])) : ?>
           <a href="dashboard.php" class="menu-item">Dashboard</a>

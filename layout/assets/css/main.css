@@ -17,15 +17,20 @@ a {
   margin: auto;
 }
 
+.text-white {
+  color: #fafafa;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
 .navbar {
   background: #ff9800;
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.navbar-brand {
-  color: #fafafa;
 }
 .navbar-menu > .menu-item {
   color: #fafafa;
